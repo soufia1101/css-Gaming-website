@@ -1,0 +1,341 @@
+/* 1. don't modify this style */
+* {
+    padding: 0;
+    margin: 0;
+  
+    box-sizing: border-box;
+  }
+  
+  /* 2. we use :root for default variables */
+  :root {
+    /* --"somekey-attr": "somevalue" i.e : */
+    --black-700: #000;
+    --bg-gradiant : #3B2A9F; 
+    --secondary : #FA8305;
+    --primary-100 : #5141AA;
+    --box-bg : #1C140F;
+    --black : #070707;
+  }
+  /* 3. and we use it like this */
+  .elementOne {
+    /* var(--"somekey-attr") */
+    background-color: var(--black-700);
+  }
+  
+  /* good luck */
+.rectangle{
+    height: 4px; 
+    
+     
+    background-color: var(--secondary); 
+    border-radius: 5px;
+}
+.header-link{
+    color: white;
+    margin-right: 40px;
+    text-decoration: none;
+    
+}
+.yellow-button{
+    background-color: var(--secondary);
+     color: white; border: none; border-radius: 10px; padding: 10px 25px 10px 25px;
+    font-family: thirdFont;
+}
+
+@font-face {
+    font-family: firstFont;
+    /* src: url(Poppins-Bold.ttf); */
+    src: url('../assets/fonts/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: secondFont;
+    /* src: url(Poppins-Thin.ttf); */
+    src: url('../assets/fonts/Poppins-Thin.ttf');
+}
+@font-face {
+    font-family: thirdFont;
+    /* src: url(Poppins-Medium.ttf); */
+    src: url('../assets/fonts/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: forthFont;
+    /* src: url(Poppins-SemiBold.ttf); */
+    src: url('../assets/fonts/Poppins-SemiBold.ttf');
+}
+@font-face {
+    font-family: fifthFont;
+    /* src: url(Poppins-Regular.ttf); */
+    src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: sixthFont;
+    /* src: url(Poppins-ExtraBold.ttf); */
+    src: url('../assets/fonts/Poppins-ExtraBold.ttf');
+}
+@font-face {
+    font-family: seventhFont;
+    /* src: url(Poppins-Light.ttf); */
+    src: url('../assets/fonts/Poppins-Light.ttf');
+}
+html{
+    font-family: thirdFont;
+}
+.followers{
+    display: flex; align-items: center; justify-content: space-around; color: white; text-align: center;
+}
+.followers:hover{
+    font-size: 20px;
+}
+input::placeholder{
+    color: #898989;
+    
+}
+.iconItem{
+    color: #070707; background-color: white; width: 34px; height: 34px; font-size:15px; text-align: center; line-height: 34px; border-radius: 20px;
+}
+.brownDot{
+    width: 7px;
+    height: 7px;
+    border-radius: 20px;
+    background-color: rgba(220, 112, 0, 0.35);
+    margin-right: 14px;
+}
+body{
+    background-color: var(--bg-gradiant); max-width: 1440px; align-items: center;
+}
+header{
+    
+    padding: 10px 40px 10px 40px;
+    background-color: var(--bg-gradiant);
+}
+.page2_header{
+    padding: 10px 40px 10px 40px;
+    background-color: var(--bg-gradiant);
+    z-index: 2;
+}
+.header_container_div{
+    display: flex;
+          justify-content: space-between;
+          align-items: center;
+}
+.logo{
+    font-family: sixthFont; color: white; font-size: 22px;
+}
+.header_navbar{
+    display: flex; align-items: center
+}
+.rectangle_container{
+    display: flex;
+              flex-direction: row;
+              position: relative;
+              left: -10px;
+}
+.main_container{
+    display: flex; align-items: center; justify-content: center;
+}
+main{
+    max-width: 1140px;
+}
+.main_div1{
+    display: flex; justify-content: space-between;
+}
+.text1div{
+    display: flex; margin-top: 100px; font-family: fifthFont; font-size: 12px;
+}
+.yellow_mini_text{
+    color: var(--secondary); margin-bottom: 30px; margin-left: 5px;
+}
+.yellow_text{
+    
+    color: var(--secondary); margin-bottom: 30px; margin-top: 100px;
+}
+.header1{
+    color: white;
+              font-family: firstFont;
+              font-weight: 700;
+              margin-bottom: 60px;
+}
+.page2_header1{
+    color: white;
+                  font-family: firstFont;
+                  font-weight: 700;
+                  font-size: 30px;
+                  margin-bottom: 60px;
+}
+.main_p{
+    color: white;
+              font-family: thirdFont;
+              font-weight: 100;
+              margin-bottom: 70px;
+}
+.yellow_link{
+    font-weight: 100; text-decoration: none; border-radius: 20px;
+    background-color: var(--secondary);
+    color: white; border: none; border-radius: 10px; padding: 10px 25px 10px 25px;
+   font-family: thirdFont;
+}
+.big_stray_img{
+    height: 656px ; width: 739px;
+                object-fit: cover; position: relative; right: -100px;
+}
+.unity_img{
+    width: 96px;
+            height: 30px;
+            position: absolute;
+            left: 650px;
+            top: 410px;
+}
+.cryengine_img{
+    width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 830px;
+            top: 200px;
+}
+.unreal_img{
+    width: 60px;
+            height: 65px;
+            position: absolute;
+            left: 1170px;
+            top: 220px;
+}
+.joystick_img{
+    height: 761px; position: relative; left: 30px; top: -100px; z-index: -1; width: 600px;
+            object-fit: cover; object-position: 100px 10%;
+}
+.page2_header2{
+    font-family: forthFont; color: white; font-size: 25px; margin-top: 150px;
+}
+.trending_div{
+    display: flex; justify-content: space-between; margin-bottom: 20px;
+}
+.trending_header{
+    color: white; font-family: r; font-weight: 800;
+}
+.trending_list{
+    display: flex; justify-content: space-between; list-style-type: none; padding: 0px 15px 0px 15px ;
+}
+.work_list{
+    list-style: none; display: flex; justify-content: space-between;
+}
+.work_list_item{
+    display: flex; flex-direction: column; margin-top: 100px; background-color: var(--box-bg); padding: 65px 37px 65px 37px; border-radius: 20px;
+}
+.work_list_item_button{
+    width: 140px;  margin-bottom: 30px;
+    font-weight: 100; text-decoration: none; border-radius: 20px;
+
+    color: white; border: none; border-radius: 10px; padding: 10px 25px 10px 25px;
+   font-family: thirdFont;
+
+}
+.work_list_item_header{
+    font-family: forthFont; color: white; margin-bottom: 30px; font-size: 20px;
+
+}
+.work_list_item_p{
+    font-family: fifthFont; color: white; width: 300px; font-size: 14px;
+
+}
+.laptop_div{
+    display: flex; justify-content: space-between; padding: 110px 110px 0px 110px; background-color: var(--box-bg); margin-top: 150px;
+}
+.laptop_img{
+    width: 500px; height: 500px; object-fit: cover; border-radius: 24px 24px 0px 0px;
+}
+.laptop_text_div{
+    width: 531px; padding-top: 50px;
+}
+.laptop_header_top{
+    color: white; font-size: 16px; margin-bottom: 30px; margin-left: 5px;
+}
+.laptop_header{
+    color: white;
+                font-family: forthFont;
+                font-weight: 700;
+                font-size: 28px;
+                margin-bottom: 60px;
+}
+.laptop_p{
+    color: white;
+                font-family: fifthFont;
+                font-weight: 100;
+                margin-bottom: 70px;
+}
+.team_div{
+    padding: 50px; background-color: var(--bg-gradiant);
+}
+.team_header{
+    color: white; font-family: forthFont; font-size: 25px;
+}
+.team_list{
+    list-style: none; display: flex; justify-content: space-between;
+}
+.team_list_item{
+    display: flex; flex-direction: column; margin-top: 100px; background-color: var(--box-bg); padding: 35px 86px 35px 86px; border-radius: 20px; text-align: center;
+}
+.team_list_item_header{
+    color: white; font-family: forthFont; font-size: 19px;
+
+}
+.team_list_item_footer{
+    color: white; font-family: seventhFont; font-size: 16px;
+
+}
+.trending_game_img{
+    width: 251px; height: 277px; border-radius: 20px; object-fit: cover;
+}
+.bold_container_div{
+    display: flex;  justify-content: center; margin-top: 100px;
+}
+.section_container_div{
+    display: flex; flex-direction: column; margin-top: 100px;
+}
+.section_header{
+    font-family: forthFont; color: white; margin-bottom: 20px; font-size: 20px;
+}
+.section_p{
+    font-family: fifthFont; color: white; width: 545px;
+}
+.dot_list_container{
+    position: relative; z-index: -1;
+}
+.dot_list_maindiv{
+    display: flex; flex-direction: column; position: absolute; top: -18px; right: 100px;
+}
+.dot_list_div{
+    display: flex; margin-bottom: 14px;
+}
+.miles_imgdiv{
+    display: flex; justify-content: center; margin-top: 50px;
+}
+.miles_img{
+    width: 1146px; height: 462px; object-fit: cover;
+}
+.recentprojects_header{
+    font-family: firstFont; color: white; text-align: center; font-size: 30px;
+}
+.recentprojects_p{
+    color: white; text-align: center; font-family: fifthFont; font-size: 14px; width: 497px;
+}
+.recentprojects_img_div{
+    display: flex; justify-content: space-between; overflow: unset; margin-bottom: 30px;
+}
+.recentprojects_img{
+    height: auto; padding-right: 10px;  border-radius: 20px;
+}
+.subscribe_div{
+    display: flex; margin-top: 100px; background-color: #1C140F; justify-content: space-between; align-items: center; padding: 40px 56px 40px 56px; border-radius: 15px;
+}
+.subscribe_input{
+    width: 385px; height: 50px; border-radius: 8px; font-size: 13px; padding: 10px 30px 10px 30px; font-family: secondFont;
+}
+footer{
+    background-color: var(--black); padding: 45px; margin-top: 100px;
+}
+.footer_p{
+    font-family: fifthFont; color: white; width: 282px;
+}
+.copyright_div{
+    background-color: var(--black); padding-top: 29px; padding-bottom: 29px; color: white; text-align: center; border-top: 1px #D2D2D2 solid; 
+}
